@@ -13,10 +13,10 @@
     "bugs": {
         "url": "https://github.com/google/gtfs-realtime-bindings/issues"
     },
-    "main": "gtfs-realtime.js",
+    "main": "nodejs/gtfs-realtime.js",
     "scripts": {
-        "test": "mocha test/*.js",
-        "buildProto": "node_modules/protobufjs/bin/proto2js ../gtfs-realtime.proto -commonjs > gtfs-realtime.js"
+        "test": "mocha ./nodejs/test/*.js",
+        "buildProto": "./nodejs/node_modules/protobufjs/bin/proto2js ./gtfs-realtime.proto -commonjs > ./nodejs/gtfs-realtime.js"
     },
     "engines": [
         "node >= 0.10.0"
